@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             var tb = tb.text.toString().toInt()
             var nama = nama.text.toString()
             if (radio1.isChecked) {
+                //rumus berat badan laki
                 beratbadan = (tb - 100) - ((tb - 100) * 10 / 100)
                 hasil.setText("nama : $nama \nberat badan ideal : "+ beratbadan.toString() + "kg")
             } else if (radio2.isChecked) {
